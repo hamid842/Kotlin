@@ -1,5 +1,3 @@
-package kotlin.tests
-
 fun main() {
     var x:Int = 0
     while (x<=5){

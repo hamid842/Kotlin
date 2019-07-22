@@ -1,5 +1,3 @@
-package classes
-
 class MyTestClass {                           //class header
     private var name: String = "tarlan"
     fun printMe() {
@@ -16,9 +14,12 @@ class MyTestClass {                           //class header
 fun main() {
     val demo = Outer.Nested().foo()
     print(demo)
-}
+}                                            // nested class
+
 class Outer {
     class Nested {
-        fun foo()="Tarlan"
+        fun foo() = "Tarlan"
     }
 }
+
+
