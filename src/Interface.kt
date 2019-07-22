@@ -1,19 +1,18 @@
-import sun.security.pkcs11.wrapper.CK_C_INITIALIZE_ARGS
-
-
 interface A {
     fun printMe() {
-        println("an interface method")
+        println(" method of interface A")
     }
 }
-interface B{
-    fun printMeToo(){
-        println("on other interface method")
+interface B  {
+    fun printMeToo() {
+        println("I am another Method from interface B")
     }
 }
 
-class multipleInterfaceExample :A,B  // implements two interfaces A and B
-fun main(args:Array<String>) {
+// implements two interfaces A and B
+class multipleInterfaceExample: A, B
+
+fun main(args: Array<String>) {
     val obj = multipleInterfaceExample()
     obj.printMe()
     obj.printMeToo()
